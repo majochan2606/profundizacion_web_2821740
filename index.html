@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Navegación</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <!-- Pantalla inicial -->
+    <div id="start-screen" class="screen active">
+      <img src="inicio.jpeg" alt="Imagen inicial">
+      <button id="start-btn">Comenzar</button>
+    </div>
+
+    <!-- Video 1 -->
+    <div id="video1-screen" class="screen">
+      <video id="video1" controls>
+        <source src="escenatresvideo_(3).mp4" type="video/mp4">
+      </video>
+      <div class="buttons">
+        <button class="next-btn">Siguiente</button>
+        <button class="back-btn">Regresar al Inicio</button>
+      </div>
+    </div>
+
+    <!-- Video 2 -->
+    <div id="video2-screen" class="screen">
+      <video id="video2" controls>
+        <source src="escenatresvideo_(2).mp4" type="video/mp4">
+      </video>
+      <div class="buttons">
+        <button class="next-btn">Siguiente</button>
+        <button class="back-btn">Regresar al Inicio</button>
+      </div>
+    </div>
+
+    <!-- Video 3 -->
+    <div id="video3-screen" class="screen">
+      <video id="video3" controls>
+        <source src="escenatresvideo_(1).mp4" type="video/mp4">
+      </video>
+      <div class="buttons">
+        <button class="back-btn">Regresar al Inicio</button>
+      </div>
+      <p>¡Has llegado al final!</p>
+    </div>
+  </div>
+  <script src="js.js"></script>
+</body>
+</html>
