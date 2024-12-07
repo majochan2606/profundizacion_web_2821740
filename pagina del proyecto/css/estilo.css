@@ -1,0 +1,515 @@
+/* tipografias bienvenidos*/
+@font-face {
+    font-family: 'Dune_Rise';
+    src: url(../sources/fonts/Dune_Rise.ttf);
+}
+
+@font-face {
+    font-family: 'Dune_Rise';
+    src: url(../sources/fonts/Dune_Rise.ttf);
+}
+/*fin tipografias*/
+
+/* Estilos básicos para cuerpo y html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para el encabezado principal */
+.encabezado-principal {
+    position: relative;
+    height: 100vh;
+    background: url(../sources/images/fondo\ del\ comic\ \(\ bienvenidos\ \)_Mesa\ de\ trabajo\ 1.png) no-repeat center center/cover;
+}
+
+/* Superposición de color oscuro para la imagen de fondo */
+.superposicion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilos para los enlaces de la barra de navegación */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 1.2rem;
+}
+
+/* Estilo para el enlace activo en la barra de navegación */
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid white;
+}
+
+/* Estilos para el título */
+h1.display-3 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/* Estilos para el texto de párrafo */
+p.lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilos para el botón principal */
+.btn-primary {
+    background-color: #4C93FF;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+}
+.bienvenida-txt{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+}
+
+.text-white h1{
+    font-family: 'Dune_Rise';
+    text-align: left;
+    font-size: 5rem;
+}
+body {
+    background-color: #111111;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #fff;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.parrafo-1{
+    text-align: justify;
+}
+
+/*personajes */
+body {
+    background-color: #1d1d1d;
+    color: white;
+    text-align: center;
+}
+
+.titulo {
+    font-family: 'Dune_Rise';
+    src: url(../sources/fonts/Dune_Rise.ttf);
+    font-size: 2em;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.linea {
+    width: 50%;
+    height: 1px;
+    background-color: white;
+    margin: 10px auto 30px;
+}
+
+.personaje {
+    width: 100px;
+    height: 100px;
+    background-color: #c4c4c4;
+}
+
+.char{
+  height: 90%;
+}
+  /* .card:hover:before {
+    background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+    animation: rotBGimg 3.5s linear infinite;
+  } */
+  
+  
+/*ANIMACIONES */
+
+.vibrate-2{animation:vibrate-2 2s linear infinite both}
+
+
+ @keyframes vibrate-2{
+    0%{
+        transform:translate(0)
+    }
+    20%{
+            transform:translate(2px,-2px)
+        }
+    40%{
+        transform:translate(2px,2px)
+    }
+    60%{
+        transform:translate(-2px,2px)
+    }
+    80%{
+        transform:translate(-2px,-2px)
+    }
+    100%{
+        transform:translate(0)
+    }
+}
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #fff;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+img {
+    max-width: 50rem;
+    height: auto;
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(-45deg, #363636 0%, #1c1c1c 100% );
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover {
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(../sources/images/imagen\ de\ datos\ de\ interes.webp);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  
+  
+  .card__description {
+    margin: 30px 0 0;
+    font-size: 14px;
+    color: white;
+    line-height: 1.4;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+  }
+  
+  .observa{
+    width: 30rem;
+    height: 40rem;
+    gap: 1rem;
+  }
+
+  .materia oscura{
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .datos{
+    gap: 15rem;
+  }
+.modal-content{
+  /*   height: 40rem !important; */
+}
+
+/*FIN ANIMACIONES*/
+
+/* Contenedor de la imagen de fondo */
+.bg-contenedor {
+    background-image: url('../sources/images/fondo\ \(sipnosis\).png');
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+}
+
+/* Estilo del contenido */
+.contenido {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
+   
+    border-radius: 10px;
+    max-width: 800px;
+    height: 40vh;
+}
+
+
+
+
+
+/* media queris*/
+
+@media screen and (max-width:500px) {
+    .titulo-nuestro-proyec{
+        font-size: 3rem !important;
+    }
+    
+}
+
+
+
+/* animacion de cards de personajes  card1*/ 
+/* From Uiverse.io by suleymanlaarabidev */ 
+
+
+.card1 {
+  width:100%;
+  height: 25rem;
+  background: rgb(103, 225, 255);
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.card1:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  background: rgb(103, 151, 255);
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+}
+
+.card1:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+}
+
+.card1:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+
+
+.titulo {
+  font-size: 2rem;
+  font-weight: lighter;
+  text-transform: lowercase;
+  letter-spacing: 0.1em;
+}
+
+.separador {
+  width: 10%;
+  margin: 0 auto;
+  border: 1px solid #aaa;
+}
+
+.cuadro-gris {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+body {
+  background-color: #1d1d1d;
+  color: #ffffff;
+}
+
+.titulo-creadores {
+  font-family: 'Times New Roman', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.divisor {
+  width: 50%;
+  margin: 0 auto;
+  border-top: 1px solid #ffffff;
+}
+
+.card {
+  border: none;
+  background-color: #1d1d1d;
+}
+
+.avatar-placeholder {
+  width: 150px;
+  height: 150px;
+  background-color: #cccccc;
+  border-radius: 5px;
+}
+
+.foter{
+  width: 100%;
+  height: 5rem;
+  background-color: #000000;
+  margin-top: 100%;
+}
+
+/* redes sociales */
+.redes{
+  height: 6vh;
+}
+.logo-final{
+  height: 8vh;
+}
+
+/* From Uiverse.io by david-mohseni */ 
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: gray;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: black;
+}
+
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: black;
+}
+.siguiente{
+  position: absolute;
+  background-position-x: 150px;
+}
