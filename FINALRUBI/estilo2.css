@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.cielo {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    transition: background 1s;
+}
+
+.container{
+    left: 5%;
+    top: 50%;
+    position: absolute;
+    z-index: 2;
+}
+a{
+    color: #FFF;
+    font-size: 25px;
+}
+
+.container2{
+    left: 95%;
+    top: 50%;
+    position: absolute;
+    z-index: 2;
+}
+a{
+    color: #FFF;
+    font-size: 25px;
+}
+.dia2{
+    color: black;
+}
+.noche {
+    background: radial-gradient(circle at bottom, #001d3d 0%, #001233 100%);
+}
+
+.dia {
+    background: linear-gradient(to top, #87CEEB, #FFF);
+}
+
+.luna {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle at 30% 30%, #ffffff, #f0e68c);
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.estrella {
+    width: 2px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: parpadeo 2s infinite;
+}
+
+.nube{
+    margin-top: 32rem;
+    margin-left: 50rem;
+    position: absolute;
+    width: 10rem;
+    z-index: 5;
+}
+.nube2{
+    margin-top: 32rem;
+    margin-left: 29rem;
+    position: absolute;
+    width: 10rem;
+    z-index: 5;
+}
+.esconde{
+    display: none;
+}
+
+.roko{
+    position: absolute;
+    left: 2%;
+    top: 85%;
+    bottom: 0;
+    width: 12%;
+    z-index: 10; 
+    height: 18%;
+    cursor: pointer;
+    animation: movimiento3 2s ease-in forwards;
+}
+.emilio {
+    position: absolute;
+    left: 10%;
+    top: 78%;
+    bottom: 0;
+    width: 15%;
+    z-index: 10; 
+    height: auto;
+    cursor: pointer;
+    animation: movimiento 2s ease-in forwards;
+}
+.andrei{
+    position: absolute;
+    left: 5%;
+    top: 85%;
+    bottom: 0;
+    width: 12%;
+    z-index: 10; 
+    height: 18%;
+    cursor: pointer;
+    animation: movimiento2 2s ease-in forwards;
+}
+
+.volcan{
+    position: absolute;
+    left: 20%;
+    top: 95%;
+    bottom: 0;
+    width: 3%;
+    z-index: 10; 
+    height: 6%;
+    cursor: pointer;
+}
+.volcan2{
+    position: absolute;
+    left: 72%;
+    top: 95%;
+    bottom: 0;
+    width: 3%;
+    z-index: 10; 
+    height: 6%;
+    cursor: pointer;
+}
+.pirotecnia{
+    margin-top: 20rem;
+    margin-left: 14rem;
+    position: absolute;
+    width: 10rem;
+    z-index: 5;
+}
+.pirotecnia2{
+    margin-top: 20rem;
+    margin-left: 58rem;
+    position: absolute;
+    width: 10rem;
+    z-index: 5;
+} 
+@keyframes movimiento {
+    0%{
+        left: 10%;
+    }
+    100%{
+        left: 50%;
+    }
+}
+
+
+@keyframes movimiento2 {
+    0%{
+        left: 5%;
+    }
+    100%{
+        left: 42%;
+    }
+}
+
+@keyframes movimiento3 {
+    0%{
+        left: 2%;
+    }
+    100%{
+        left: 30%;
+    }
+}
+
+
+
+@keyframes parpadeo {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+}
+
+.feria {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
